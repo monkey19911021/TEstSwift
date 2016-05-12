@@ -3,7 +3,7 @@
 
 ## 反射机制: Mirror
 [Reflect.swift](https://github.com/monkey19911021/TEstSwift/blob/master/TEstSwift/Reflect.swift)
----
+```
 object 是 Struct
 object 的类名: Person
 Person 的属性个数是：2
@@ -21,4 +21,4 @@ Fruit 的属性个数是：2
 ▿ TEstSwift.Fruit #0
   - name: 苹果
   - count: 10
----
+```
