@@ -9,7 +9,7 @@
 import Foundation
 
 //基本类型
-baseValue()
+//baseValue()
 
 //基本集合类型
 //baseCollectionType()
@@ -21,7 +21,7 @@ baseValue()
 //baseFunction()
 
 //基本运算符
-//baseOperator()
+baseOperator()
 
 //反射
 //Reflect()
