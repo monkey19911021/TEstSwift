@@ -18,10 +18,10 @@ import Foundation
 //StringAndCharachter()
 
 //基本集合类型
-baseCollectionType()
+//baseCollectionType()
 
 //控制流
-//baseConstruct()
+controlFlow()
 
 //函数式
 //baseFunction()

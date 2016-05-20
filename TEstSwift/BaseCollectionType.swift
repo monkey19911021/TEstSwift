@@ -117,11 +117,11 @@ func baseCollectionType()
     let farmAnimals: Set = ["🐮", "🐔", "🐑", "🐶", "🐱"]
     let cityAnimals: Set = ["🐦", "🐭"]
     
-    houseAnimals.isSubsetOf(farmAnimals) //houseAnimals 是否 farmAnimals 的子集
+    _ = houseAnimals.isSubsetOf(farmAnimals) //houseAnimals 是否 farmAnimals 的子集
     // true
-    farmAnimals.isSupersetOf(houseAnimals) // farmAnimals 是否 houseAnimals 的超集
+    _ = farmAnimals.isSupersetOf(houseAnimals) // farmAnimals 是否 houseAnimals 的超集
     // true
-    farmAnimals.isDisjointWith(cityAnimals) //是否没有交集
+    _ = farmAnimals.isDisjointWith(cityAnimals) //是否没有交集
     // true
     
     print("\n\n\n\n\n")
@@ -134,37 +134,44 @@ func baseCollectionType()
     //同类型字典
     var dic = ["key1": "value1", "key2": "value2"]
     //混合类型字典
-    var dic2 = [1: 2, 11: "22", "1": "2", 1.0: 2.0] //键的值即使类型不一样但值一样都会被判断为同一个键
+    var dic2 = [1: 2, 11: "22", "1": "2"] //键的值即使类型不一样但值一样都会被判断为同一个键
     
     //初始化
-    let tempDic: Dictionary<Int, String> = [1: "1", 2: "2"]  //控制键值类型
-    let tempDic1 = Dictionary<Int, String>()                 //空字典， 控制键值类型
-    let tempDic2 = [:]                                       //空字典， 不控制键值类型
+    _ = [Int: String]()
+    let tempDic: [Int: String] = [1: "1", 2: "2"]  //控制键值类型
+    let tempDic1: Dictionary<Int, String> = [1: "1", 2: "2"]  //控制键值类型
+    
+    _ = Dictionary<Int, String>()                 //空字典， 控制键值类型
+    _ = [:]                                       //空字典， 不控制键值类型
     
     print(tempDic)
     print(tempDic1)
-    print(tempDic2)
     
     //Dictionary<键类型， 值类型>(最小键值数量);
-    let dic1 = Dictionary<Int, Double>(minimumCapacity: 2)
+    _ = Dictionary<Int, Double>(minimumCapacity: 2)
     
+    //是否为空
+    dic.isEmpty
+    
+    //数量
+    dic.count
     
     //查看元素值
     print(dic["key1"]! + "," + "\(dic2[1])")   //有时系统判断不出字典的某键是否存在值，所以你肯定它有值得时候在表达式最后加上!， 不肯定的时候加?
     
     //添加元素
-    //    dic["key3"] = "value3"
+    dic["key3"] = "value3"
     dic.updateValue("value3", forKey: "key3")
     print("字典添加元素后为：" + dic["key3"]!)
     
     //修改元素
-    //    dic["key3"] = "updateValue3"
-    var beforeValue = dic.updateValue("updateValue3", forKey: "key3")
+    dic["key3"] = "updateValue3"
+    let beforeValue = dic.updateValue("updateValue3", forKey: "key3")
     print("字典修改元素后为：" + dic["key3"]! + "\n修改前的值为： " + beforeValue!) //如果key是原本字典不存在的，那么beforeValue将会为nil
     
     //删除一个键值对
-    //    dic["key3"] = nil
-    var removedValue = dic.removeValueForKey("key3")
+    dic["key3"] = nil
+    let removedValue = dic.removeValueForKey("key3")
     print("修改后的字典为：\(dic), 被删除的值为：\(removedValue)")
     
     
@@ -176,7 +183,7 @@ func baseCollectionType()
     }
     
     //混合类型
-//    for (key, value): (AnyObject, AnyObject) in dic2{
-//        println("键：\(key), 值：\(value)")
-//    }
+    for (key, value) in dic2{
+        print("dic2 键：\(key), 值：\(value)")
+    }
 }

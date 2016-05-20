@@ -9,7 +9,7 @@
 import Foundation
 
 //基本控制流
-func baseConstruct()
+func controlFlow()
 {
     /*
     * For 循环////////////////////////////////////////////////////
@@ -29,17 +29,16 @@ func baseConstruct()
     //不需要知道循环每一项的值,可以使用下划线（_）替代变量名来忽略对值的访问
     for _ in 1...5
     {
-        print("*", terminator: "")
+        print("*", terminator: ", ")
     }
-    print("");
     
-    /*
-    * For条件递增（for-condition-increment）
-    * 除了 for-in 循环，Swift 提供使用条件判断和递增方法的标准C样式 for 循环:
-    */
-    for var index = 0; index < 6; index+=2 {
-        print("index is \(index)")
-    }
+    
+    //repeat-while
+    var repeatCount = 0;
+    repeat{
+        repeatCount += 1;
+        print(repeatCount)
+    }while repeatCount > 3
     
     
     /*
@@ -65,12 +64,12 @@ func baseConstruct()
     
     
     //区间匹配
-    let count = 3_000_000_000_000
+    let count = random()
     let countedThings = "stars in the Milky Way"
     var naturalCount: String
     switch count {
     case 0:
-        naturalCount = "no"
+//        naturalCount = "no"
         fallthrough //使用贯穿关键字， 执行完case 0, 再进行判断case1...3
     case 1...3:
         naturalCount = "a few"
@@ -85,10 +84,10 @@ func baseConstruct()
     default:
         naturalCount = "millions and millions of"
     }
-    print("There are \(naturalCount) \(countedThings).")
+    print("\(count)  There are \(naturalCount) \(countedThings).")
     
     //元组匹配
-    let somePoint = (1, 1)
+    let somePoint = (random()%10, random()%10)
     switch somePoint {
     case (0, 0):
         print("(0, 0) 是一个原点")
@@ -103,7 +102,7 @@ func baseConstruct()
     }
     
     //值绑定
-    let anotherPoint = (0, 0)
+    let anotherPoint = (rand()%10, rand()%10)
     switch anotherPoint {
     case (let x, 0): //符合（xx, 0）的值，并把值赋给x
         print("on the x-axis with an x value of \(x)")
@@ -114,7 +113,7 @@ func baseConstruct()
     }
     
     //where 语句， case 分支的模式可以使用where语句来判断额外的条件
-    let yetAnotherPoint = (1, -1)
+    let yetAnotherPoint = (rand()%10, rand()%10)
     switch yetAnotherPoint {
     case let (x, y) where x == y:
         print("(\(x), \(y)) x等于y")
