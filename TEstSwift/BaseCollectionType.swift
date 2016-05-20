@@ -11,6 +11,7 @@ import Foundation
 //基本集合类型
 func baseCollectionType()
 {
+    //MARK: 数组
     /*
     *  数组 ////////////////////////////////////////////////
     *  Array<SomeType>
@@ -18,18 +19,25 @@ func baseCollectionType()
     
     //单类型数组
     var array = ["var1", "var2"]//但类型数组系统推断为ArrayType
-    
-    print("数组：\(array)")
+    print("普通数组：\(array)")
     
     //混合类型数组
-    var array2 = [1, 2, "1", "2"]  //混合类型数组系统推断为NSArray子类，没有isEmpty、append属性和方法
+    let array2 = [1, 2, "1", "2"]  //混合类型数组系统推断为NSArray子类，没有isEmpty、append属性和方法
+    print("混合类型数组：\(array2)")
+    
     
     //初始化
-    var numbers: [Int] = [1, 2, 3];                    //控制元素所有类型都是Int
-//    var numbers1 = Int[]()                              //控制所有元素类型为Int，并且为空
-//    var numbers2 = Int[](count: 3, repeatedValue: 0)    //一共有三个元素，并且所有元素的值为0
-    var numbers3 = Array(count:3, repeatedValue: 1)      //由于有类型推断机制存在所以可以用Array来初始化
-    var numbers4 = Array(count:3, repeatedValue: 1.2 )
+    let numbers: [Int] = [1, 2, 3];                    //控制元素所有类型都是Int
+    let numbers1 = [Int]()                              //控制所有元素类型为Int，并且为空
+    let numbers2 = [Int](count: 3, repeatedValue: 0)    //一共有三个元素，并且所有元素的值为0
+    let numbers3 = Array(count:3, repeatedValue: 1)      //由于有类型推断机制存在所以可以用Array来初始化
+    let numbers4 = Array(count:3, repeatedValue: 1.2 )
+    
+    print("numbers:\(numbers)")
+    print("numbers1:\(numbers1)")
+    print("numbers2:\(numbers2)")
+    print("numbers3:\(numbers3)")
+    print("numbers4:\(numbers4)")
     
     //取数组和字典元素个数
     print("数组元素个数：\(array.count)")
@@ -39,13 +47,12 @@ func baseCollectionType()
     
     //数组添加元素  ArrayType
     array.append("appended")            //只能应用于同类型元素数组
-//    array += "appended2"                //只能添加相同元素类型，可以是单个元素或者数组
     array += ["one", "two", "three"]    //数组合并
     print("添加元素后的数组：\(array)")
     
     //取元素
     print("数组第一个元素：\(array[0])");
-//    println("数组第一到第二个元素: \(array[0..2])") //半闭区间运算符：..
+    print("数组第一到第二个元素: \(array[0..<2])") //半闭区间运算符：..<
     print("数组第一到第三个元素：\(array[0...2])") //闭区间运算符：...
     
     //替换元素
@@ -54,8 +61,9 @@ func baseCollectionType()
     print("替换元素后的数组：\(array)");
     
     //删除元素
-    var removed = array.removeAtIndex(4)
-    //      array[0] = nil
+    let removed = array.removeAtIndex(4)
+//    array.removeLast()
+//    array.removeFirst()
     print("删除元素后的数组：\(array), 被删除的元素为：\(removed)");
     
     //插入元素
@@ -74,11 +82,51 @@ func baseCollectionType()
     }
     
     
+    print("\n\n\n\n\n")
     
+    //MARK: 集合 Set，大部分用法跟数组一样
+    //初始化
+    var letters = Set<Character>()
+    let favoriteGenres: Set<String> = ["Rock", "Classical", "Hip hop", "Hip hop"] //集合会把相同的对象过滤
+    print("集合: \(letters)")
+    print("集合: \(favoriteGenres)")
     
+    letters.insert("a")//插入
+    letters = [] //清空
     
+    //基本集合操作
+    let oddDigits: Set = [1, 3, 5, 7, 9]
+    let evenDigits: Set = [0, 2, 4, 6, 8]
+    let singleDigitPrimeNumbers: Set = [2, 3, 5, 7]
+    
+    let unionSet = oddDigits.union(evenDigits).sort() //取并集
+    // [0, 1, 2, 3, 4, 5, 6, 7, 8, 9]
+    let intersectSet = oddDigits.intersect(evenDigits).sort() //取交集
+    // []
+    let subtractSet = oddDigits.subtract(singleDigitPrimeNumbers).sort()//根据不在该集合中的值创建一个新的集合
+    // [1, 9]
+    let exclusiveOrSet = oddDigits.exclusiveOr(singleDigitPrimeNumbers).sort()//根据在一个集合中但不在两个集合中的值创建一个新的集合
+    // [1, 2, 9]
+    
+    print("取两集合并集: \(unionSet)")
+    print("取两集合交集: \(intersectSet)")
+    print("subtractSet: \(subtractSet)")
+    print("exclusiveOrSet: \(exclusiveOrSet)")
+    
+    let houseAnimals: Set = ["🐶", "🐱"]
+    let farmAnimals: Set = ["🐮", "🐔", "🐑", "🐶", "🐱"]
+    let cityAnimals: Set = ["🐦", "🐭"]
+    
+    houseAnimals.isSubsetOf(farmAnimals) //houseAnimals 是否 farmAnimals 的子集
+    // true
+    farmAnimals.isSupersetOf(houseAnimals) // farmAnimals 是否 houseAnimals 的超集
+    // true
+    farmAnimals.isDisjointWith(cityAnimals) //是否没有交集
+    // true
     
     print("\n\n\n\n\n")
+    
+    //MARK: 字典
     /*
     *  字典 ////////////////////////////////////////////////
     *  Dictionary<KeyType, ValueType>
@@ -89,12 +137,16 @@ func baseCollectionType()
     var dic2 = [1: 2, 11: "22", "1": "2", 1.0: 2.0] //键的值即使类型不一样但值一样都会被判断为同一个键
     
     //初始化
-    var tempDic: Dictionary<Int, String> = [1: "1", 2: "2"]  //控制键值类型
-    var tempDic1 = Dictionary<Int, String>()                 //空字典， 控制键值类型
-    var tempDic2 = [:]                                       //空字典， 不控制键值类型
+    let tempDic: Dictionary<Int, String> = [1: "1", 2: "2"]  //控制键值类型
+    let tempDic1 = Dictionary<Int, String>()                 //空字典， 控制键值类型
+    let tempDic2 = [:]                                       //空字典， 不控制键值类型
+    
+    print(tempDic)
+    print(tempDic1)
+    print(tempDic2)
     
     //Dictionary<键类型， 值类型>(最小键值数量);
-    var dic1 = Dictionary<Int, Double>(minimumCapacity: 2)
+    let dic1 = Dictionary<Int, Double>(minimumCapacity: 2)
     
     
     //查看元素值

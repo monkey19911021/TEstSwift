@@ -37,5 +37,25 @@ func StringAndCharachter(){
     for index in greeting.characters.indices {
         print("\(greeting[index]) ", terminator: ", ")
     }
-    // 打印输出 "G u t e n   T a g ! "
+    
+    //MARK: 插入和删除
+    var welcome = "hello"
+    //插入字符
+    welcome.insert("!", atIndex: welcome.endIndex)
+    print("\n\(welcome)\n")
+    
+    //插入字符串
+    welcome.insertContentsOf(" world".characters, at: welcome.endIndex.predecessor())
+    print("\n\(welcome)\n")
+    
+    //删除字符
+    welcome.removeAtIndex(welcome.endIndex.predecessor())
+    print("\n\(welcome)\n")
+    
+    //删除字符串
+    let welcomeRange = welcome.endIndex.advancedBy(-6)..<welcome.endIndex
+    welcome.removeRange(welcomeRange)
+    print("\n\(welcome)\n")
+    
+    
 }

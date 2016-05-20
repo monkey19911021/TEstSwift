@@ -15,10 +15,10 @@ import Foundation
 //baseOperator()
 
 //字符串和字符
-StringAndCharachter()
+//StringAndCharachter()
 
 //基本集合类型
-//baseCollectionType()
+baseCollectionType()
 
 //控制流
 //baseConstruct()
