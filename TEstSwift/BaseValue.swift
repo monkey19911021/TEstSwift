@@ -11,16 +11,16 @@ import Foundation
 //基本类型
 func baseValue(){
     
-    //常量
+    //MARK: 常量
     let letValue = 10000000
     print("常量：\(letValue)" )
     
-    //变量
+    //MARK: 变量
     var varValue = 10
     varValue += 10
     print("变量：\(varValue)")
     
-    //基本类型声明（少用，swift可以自行推断变量类型）
+    //MARK: 基本类型声明（少用，swift可以自行推断变量类型）
     let varInt    : Int    = 1
     let vatDouble : Double = 1.0
     let varFloat  : Float  = 1.0
@@ -29,7 +29,7 @@ func baseValue(){
     print("声明类型变量： Int: \(varInt)、Double: \(vatDouble)、Float: \(varFloat)、Bool: \(varBool)、String: \(varString)")
     
     
-    //类型转换
+    //MARK: 类型转换
     let UInt8Value  : UInt8 = UInt8.max
     print("UInt8转换成UInt16：\(UInt16(UInt8Value))")
     print("UInt8转换成String：\(String(UInt8Value))")
@@ -48,7 +48,7 @@ func baseValue(){
      
      */
     
-    //数值型字面量
+    //MARK: 数值型字面量
     let binaryInteger = 0b10001       // 二进制的17， 前缀：0b
     let octalInteger = 0o21           // 八进制的17，前缀：0o
     let decimalInteger = 17           //十进制的17
@@ -106,7 +106,7 @@ func baseValue(){
     
     
     
-    //类型别名
+    //MARK: 类型别名
     /*
     *  当你想要给现有类型起一个更有意义的名字时，类型别名非常有用
     */
@@ -117,7 +117,7 @@ func baseValue(){
     
     
     
-    //元组
+    //MARK: 元组
     /*
     *  元组（tuples）把多个值组合成一个复合值。元组内的值可以使任意类型，并不要求是相同类型。
     *  作为函数返回值时，元组非常有用。
@@ -134,7 +134,7 @@ func baseValue(){
    
     
     
-    //!和?
+    //MARK: !和?
     //取值时加!，表示强制解析，确定一个可选值确实有值，否则编译报错
     var optionVar: String? //默认值自动设为nil
     var requireVar: String!
@@ -148,7 +148,7 @@ func baseValue(){
     
     
     
-    //可选绑定
+    //MARK: 可选绑定
     let possibleNumber = "123"
     if let actualNumber = Int(possibleNumber){
         //如果Int(possibleNumber)返回的可选Int包含一个值，创建一个叫做actualNumber的新常量并将可选包含的值赋给它
@@ -162,7 +162,7 @@ func baseValue(){
         print("\(firstNumber) 比 \(secondNumber) 小")
     }
     
-    //断言
+    //MARK: 断言
     let age = 8
     assert(age >= 0, "年龄不能小于0")
 }

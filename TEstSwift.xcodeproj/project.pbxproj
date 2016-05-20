@@ -15,6 +15,7 @@
 		AE387AD219613F82000595F6 /* BaseFunction.swift in Sources */ = {isa = PBXBuildFile; fileRef = AE387AD119613F82000595F6 /* BaseFunction.swift */; };
 		AE387AD419613FD2000595F6 /* Closures.swift in Sources */ = {isa = PBXBuildFile; fileRef = AE387AD319613FD2000595F6 /* Closures.swift */; };
 		AEC29DC21941CFE800545051 /* main.swift in Sources */ = {isa = PBXBuildFile; fileRef = AEC29DC11941CFE800545051 /* main.swift */; };
+		FB2CD9D31CEEB8BF004D822B /* StringAndCharacter.swift in Sources */ = {isa = PBXBuildFile; fileRef = FB2CD9D21CEEB8BE004D822B /* StringAndCharacter.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
@@ -39,6 +40,7 @@
 		AE387AD319613FD2000595F6 /* Closures.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Closures.swift; sourceTree = "<group>"; };
 		AEC29DBE1941CFE800545051 /* TEstSwift */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = TEstSwift; sourceTree = BUILT_PRODUCTS_DIR; };
 		AEC29DC11941CFE800545051 /* main.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = main.swift; sourceTree = "<group>"; };
+		FB2CD9D21CEEB8BE004D822B /* StringAndCharacter.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = StringAndCharacter.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -79,6 +81,7 @@
 				AE387AD119613F82000595F6 /* BaseFunction.swift */,
 				AE387AD319613FD2000595F6 /* Closures.swift */,
 				AE0E4D32195880D3002E107A /* Reflect.swift */,
+				FB2CD9D21CEEB8BE004D822B /* StringAndCharacter.swift */,
 			);
 			path = TEstSwift;
 			sourceTree = "<group>";
@@ -149,6 +152,7 @@
 				AE387ACA19613EE4000595F6 /* BaseValue.swift in Sources */,
 				AE387AD019613F61000595F6 /* BaseConstruct.swift in Sources */,
 				AE0E4D33195880D3002E107A /* Reflect.swift in Sources */,
+				FB2CD9D31CEEB8BF004D822B /* StringAndCharacter.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

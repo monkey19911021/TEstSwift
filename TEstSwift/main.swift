@@ -11,6 +11,12 @@ import Foundation
 //基本类型
 //baseValue()
 
+//基本运算符
+//baseOperator()
+
+//字符串和字符
+StringAndCharachter()
+
 //基本集合类型
 //baseCollectionType()
 
@@ -20,8 +26,6 @@ import Foundation
 //函数式
 //baseFunction()
 
-//基本运算符
-baseOperator()
 
 //反射
 //Reflect()
