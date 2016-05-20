@@ -6,6 +6,8 @@
 //  Copyright © 2016年 Minstone. All rights reserved.
 //
 
+//(づ￣ ³￣)づ 📑 ლ(•̀ _ •́ ლ)
+
 import Foundation
 
 func StringAndCharachter(){
