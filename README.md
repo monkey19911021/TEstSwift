@@ -1,5 +1,5 @@
 # TEstSwift
-初学者Swift的测试
+初学者Swift的测试，可以用来测试swift的更新API
 
 ## 反射机制: Mirror
 [Reflect.swift](https://github.com/monkey19911021/TEstSwift/blob/master/TEstSwift/Reflect.swift)
