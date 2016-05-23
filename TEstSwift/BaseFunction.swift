@@ -21,7 +21,7 @@ func baseFunction()
     print(greet("Tome", day: "1991-10-21"));
     
     //MARK: 数组参数
-    func arrayParam(numbers: [Int]) -> (max: Int, min: Int)?
+    func arrayParam(numbers: [Int]) -> (max: Int, min: Int)? //返回可选值
     {
         if numbers.isEmpty{
             return nil;

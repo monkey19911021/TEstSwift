@@ -24,14 +24,14 @@ import Foundation
 //controlFlow()
 
 //函数式
-baseFunction()
+//baseFunction()
 
 
 //反射
 //Reflect()
 
 //闭包
-//closures()
+closures()
 
 
 
