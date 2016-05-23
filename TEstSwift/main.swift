@@ -21,10 +21,10 @@ import Foundation
 //baseCollectionType()
 
 //控制流
-controlFlow()
+//controlFlow()
 
 //函数式
-//baseFunction()
+baseFunction()
 
 
 //反射

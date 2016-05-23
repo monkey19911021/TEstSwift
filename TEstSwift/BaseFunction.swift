@@ -6,6 +6,8 @@
 //  Copyright (c) 2014年 Minstone. All rights reserved.
 //
 
+//(づ￣ ³￣)づ 📑 ლ(•̀ _ •́ ლ)
+
 import Foundation
 
 //基本函数式
@@ -27,6 +29,32 @@ func baseFunction()
     }
     var result = greet1("aa", 12)
     
+    //数组参数
+    func arrayParam(numbers: [Int]) -> (max: Int, min: Int)
+    {
+        var currentMax = numbers[0]
+        var currentMin = numbers[0]
+        
+        for number in numbers {
+            if number > currentMax{
+                currentMax = number
+            }else if number < currentMin{
+                currentMin = number
+            }
+        }
+        
+        return (currentMax, currentMin)
+    }
+    print("数组参数获取最大最小值：\(arrayParam([2, 1, 8, 9, 5]))");
+    
+    //字典作为参数
+    func dicParam(person: [String: String]){
+        print("字典参数")
+        for (key, value) in person{
+            print("\(key): \(value)")
+        }
+    }
+    dicParam(["name": "M0nk1y", "location": "GZ"])
    
     
     //返回参数带名， 多参数时建议写上名字，方便阅读代码
@@ -34,8 +62,8 @@ func baseFunction()
     {
         return ("name", 18, 190.131)
     }
-    var result2 = greet2().name
-    print(result2)
+    var result2 = greet2()
+    print(result2.name)
     
     
     

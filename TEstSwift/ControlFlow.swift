@@ -86,7 +86,7 @@ func controlFlow()
     }
     print("\(count)  There are \(naturalCount) \(countedThings).")
     
-    //元组匹配
+    //MARK: 元组匹配
     let somePoint = (random()%10, random()%10)
     switch somePoint {
     case (0, 0):
@@ -138,4 +138,29 @@ func controlFlow()
     /*
     * return
     */
+    
+    //MARK: guard
+    greet(["name": "M0nk1y"])
+    
+    
+    //MARK: 检测 API 可用性
+    if #available(iOS 9, OSX 10.10, watchOS 1.0, *){
+        // 在 iOS 使用 iOS 9 的 API, 在 OS X 使用 OS X v10.10 的 API
+    }else{
+        // 使用先前版本的 iOS 和 OS X 的 API
+    }
+    
+}
+
+func greet(person: [String: String]) {
+    guard let name = person["name"] else {
+        return
+    }
+    print("Hello \(name)")
+    
+    guard let location = person["location"] else {
+        print("I hope the weather is nice near you.")
+        return
+    }
+    print("I hope the weather is nice in \(location).")
 }
