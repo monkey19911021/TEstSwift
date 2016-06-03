@@ -6,13 +6,16 @@
 //  Copyright (c) 2014年 Minstone. All rights reserved.
 //
 
+
+//(づ￣ ³￣)づ 📑 ლ(•̀ _ •́ ლ)
+
 import Foundation
 
 //基本类型
 //baseValue()
 
 //基本运算符
-//baseOperator()
+baseOperator()
 
 //字符串和字符
 //StringAndCharachter()
@@ -31,7 +34,7 @@ import Foundation
 //Reflect()
 
 //闭包
-closures()
+//closures()
 
 
 
