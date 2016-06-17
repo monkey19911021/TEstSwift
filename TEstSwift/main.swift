@@ -15,7 +15,7 @@ import Foundation
 //baseValue()
 
 //基本运算符
-baseOperator()
+//baseOperator()
 
 //字符串和字符
 //StringAndCharachter()
@@ -29,13 +29,20 @@ baseOperator()
 //函数式
 //baseFunction()
 
-
 //反射
 //Reflect()
 
 //闭包
 //closures()
 
+//枚举
+//enumeration()
+
+//类和结构体
+//classAndStructure()
+
+//属性
+properties()
 
 
 
