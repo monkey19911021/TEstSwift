@@ -42,7 +42,10 @@ import Foundation
 //classAndStructure()
 
 //属性
-properties()
+//properties()
+
+//方法
+methods()
 
 
 
