@@ -45,7 +45,10 @@ import Foundation
 //properties()
 
 //方法
-methods()
+//methods()
+
+//下标
+subscripts()
 
 
 
