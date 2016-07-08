@@ -51,11 +51,10 @@ import Foundation
 //subscripts()
 
 //继承
-inheritance()
+//inheritance()
 
-
-
-
+//构造过程
+initialization()
 
 
 
