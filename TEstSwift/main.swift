@@ -48,8 +48,10 @@ import Foundation
 //methods()
 
 //下标
-subscripts()
+//subscripts()
 
+//继承
+inheritance()
 
 
 

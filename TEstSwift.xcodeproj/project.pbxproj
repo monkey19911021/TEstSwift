@@ -21,6 +21,7 @@
 		FB98CCF71D016570001A8589 /* Enumerations.swift in Sources */ = {isa = PBXBuildFile; fileRef = FB98CCF61D016570001A8589 /* Enumerations.swift */; };
 		FB98CD191D0D36BE001A8589 /* ClassAndStructure.swift in Sources */ = {isa = PBXBuildFile; fileRef = FB98CD181D0D36BE001A8589 /* ClassAndStructure.swift */; };
 		FBABA7711D13E27200E3CC49 /* Properties.swift in Sources */ = {isa = PBXBuildFile; fileRef = FBABA7701D13E27200E3CC49 /* Properties.swift */; };
+		FBD6F5AF1D2DFB4200B605D3 /* Inheritance.swift in Sources */ = {isa = PBXBuildFile; fileRef = FBD6F5AE1D2DFB4200B605D3 /* Inheritance.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
@@ -51,6 +52,7 @@
 		FB98CCF61D016570001A8589 /* Enumerations.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Enumerations.swift; sourceTree = "<group>"; };
 		FB98CD181D0D36BE001A8589 /* ClassAndStructure.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ClassAndStructure.swift; sourceTree = "<group>"; };
 		FBABA7701D13E27200E3CC49 /* Properties.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Properties.swift; sourceTree = "<group>"; };
+		FBD6F5AE1D2DFB4200B605D3 /* Inheritance.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Inheritance.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -97,6 +99,7 @@
 				FBABA7701D13E27200E3CC49 /* Properties.swift */,
 				6C6FDF131D289E8E009EB1B5 /* Methods.swift */,
 				6C6FDF151D28BF4E009EB1B5 /* Subscripts.swift */,
+				FBD6F5AE1D2DFB4200B605D3 /* Inheritance.swift */,
 			);
 			path = TEstSwift;
 			sourceTree = "<group>";
@@ -161,6 +164,7 @@
 			files = (
 				FBABA7711D13E27200E3CC49 /* Properties.swift in Sources */,
 				AE387ACE19613F49000595F6 /* BaseOperator.swift in Sources */,
+				FBD6F5AF1D2DFB4200B605D3 /* Inheritance.swift in Sources */,
 				AE387AD419613FD2000595F6 /* Closures.swift in Sources */,
 				AE387ACC19613F24000595F6 /* BaseCollectionType.swift in Sources */,
 				FB98CCF71D016570001A8589 /* Enumerations.swift in Sources */,
