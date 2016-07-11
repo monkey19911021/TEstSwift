@@ -41,7 +41,7 @@ private class SuperClass{
         get{
             print("父类属性 getter")
             
-            if(_property.characters.count == 0){
+            if(_property.isEmpty){
                 _property = "我是父类"
             }
             return _property
@@ -76,7 +76,7 @@ final private class SubClass: SuperClass{
             print("访问父类属性 getter：\(super.property)")
             
             
-            if(_property.characters.count == 0){
+            if(_property.isEmpty){
                 return "我是子类"
             }
             return _property
