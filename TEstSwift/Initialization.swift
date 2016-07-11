@@ -19,7 +19,7 @@ func initialization(){
     
 }
 
-class MKClass{
+private class MKClass{
     
     //为了规范，swift 中参数声明之后都要赋默认值
     var name: String = ""
@@ -74,7 +74,7 @@ class MKClass{
 }
 
 //子类中的构造器：
-class SubMKClass: MKClass{
+private class SubMKClass: MKClass{
     
     var extra: String = ""
     

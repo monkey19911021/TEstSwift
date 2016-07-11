@@ -54,7 +54,10 @@ import Foundation
 //inheritance()
 
 //构造过程
-initialization()
+//initialization()
+
+//析构过程
+deinitialization()
 
 
 
