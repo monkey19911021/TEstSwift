@@ -8,7 +8,7 @@
 
 
 //swift的反射
-struct Person{
+private struct Person{
     let name: String
     let age: Int
 }

@@ -57,7 +57,10 @@ import Foundation
 //initialization()
 
 //析构过程
-deinitialization()
+//deinitialization()
+
+//引用
+reference()
 
 
 
