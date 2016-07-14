@@ -152,7 +152,9 @@ func controlFlow()
     
 }
 
+//guard - else 用法, guard 布尔值 else 布尔值为假时执行语句
 func greet(person: [String: String]) {
+    //若不满足条件则提前退出方法
     guard let name = person["name"] else {
         return
     }

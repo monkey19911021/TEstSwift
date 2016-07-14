@@ -63,7 +63,10 @@ import Foundation
 //reference()
 
 //可选链式调用
-optionalChaining()
+//optionalChaining()
+
+//错误处理
+errorHandling()
 
 
 
