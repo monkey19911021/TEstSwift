@@ -26,6 +26,7 @@
 		FB9A34B01D3637D200FD6694 /* ErrorHandling.swift in Sources */ = {isa = PBXBuildFile; fileRef = FB9A34AF1D3637D200FD6694 /* ErrorHandling.swift */; };
 		FB9A34B21D378E4800FD6694 /* TypeCasting.swift in Sources */ = {isa = PBXBuildFile; fileRef = FB9A34B11D378E4800FD6694 /* TypeCasting.swift */; };
 		FB9A34B41D38B82D00FD6694 /* NestedTypes.swift in Sources */ = {isa = PBXBuildFile; fileRef = FB9A34B31D38B82D00FD6694 /* NestedTypes.swift */; };
+		FB9A34B61D38C6D600FD6694 /* Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = FB9A34B51D38C6D600FD6694 /* Extensions.swift */; };
 		FBABA7711D13E27200E3CC49 /* Properties.swift in Sources */ = {isa = PBXBuildFile; fileRef = FBABA7701D13E27200E3CC49 /* Properties.swift */; };
 		FBC134941D2F50410007E051 /* Initialization.swift in Sources */ = {isa = PBXBuildFile; fileRef = FBC134931D2F50410007E051 /* Initialization.swift */; };
 		FBD6F5AF1D2DFB4200B605D3 /* Inheritance.swift in Sources */ = {isa = PBXBuildFile; fileRef = FBD6F5AE1D2DFB4200B605D3 /* Inheritance.swift */; };
@@ -64,6 +65,7 @@
 		FB9A34AF1D3637D200FD6694 /* ErrorHandling.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ErrorHandling.swift; sourceTree = "<group>"; };
 		FB9A34B11D378E4800FD6694 /* TypeCasting.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TypeCasting.swift; sourceTree = "<group>"; };
 		FB9A34B31D38B82D00FD6694 /* NestedTypes.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NestedTypes.swift; sourceTree = "<group>"; };
+		FB9A34B51D38C6D600FD6694 /* Extensions.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Extensions.swift; sourceTree = "<group>"; };
 		FBABA7701D13E27200E3CC49 /* Properties.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Properties.swift; sourceTree = "<group>"; };
 		FBC134931D2F50410007E051 /* Initialization.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Initialization.swift; sourceTree = "<group>"; };
 		FBD6F5AE1D2DFB4200B605D3 /* Inheritance.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Inheritance.swift; sourceTree = "<group>"; };
@@ -121,6 +123,7 @@
 				FB9A34AF1D3637D200FD6694 /* ErrorHandling.swift */,
 				FB9A34B11D378E4800FD6694 /* TypeCasting.swift */,
 				FB9A34B31D38B82D00FD6694 /* NestedTypes.swift */,
+				FB9A34B51D38C6D600FD6694 /* Extensions.swift */,
 			);
 			path = TEstSwift;
 			sourceTree = "<group>";
@@ -183,6 +186,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				FB9A34B61D38C6D600FD6694 /* Extensions.swift in Sources */,
 				FBABA7711D13E27200E3CC49 /* Properties.swift in Sources */,
 				AE387ACE19613F49000595F6 /* BaseOperator.swift in Sources */,
 				FB9A34B21D378E4800FD6694 /* TypeCasting.swift in Sources */,
