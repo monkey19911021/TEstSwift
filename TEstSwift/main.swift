@@ -66,7 +66,10 @@ import Foundation
 //optionalChaining()
 
 //错误处理
-errorHandling()
+//errorHandling()
+
+//类型转换
+typeCasting()
 
 
 
