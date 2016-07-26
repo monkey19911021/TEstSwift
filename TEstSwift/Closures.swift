@@ -21,7 +21,7 @@ func closures()
     let names = ["Chris", "Alex", "Ewa", "Barry", "Daniella"]
     
     //一般用法
-    func namesSortFun(s1: String, s2: String) -> Bool{
+    func namesSortFun(s1: String, s2: String) -> Bool {
         return s1 < s2
     }
     var namesSorted = names.sort(namesSortFun);
