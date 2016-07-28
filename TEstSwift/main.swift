@@ -78,5 +78,8 @@ import Foundation
 //extensions()
 
 //协议
-protocols()
+//protocols()
+
+//泛型
+generics()
 
