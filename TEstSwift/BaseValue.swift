@@ -64,26 +64,26 @@ func baseValue(){
     *   常量与变量名不能包含数学符号，箭头，保留的（或者非法的）Unicode 码位，连线与制表符。也不能以数字开头，但是可以在常量与变量名的其他地方包含数字。
     */
     let π     = 3.14159
-    let 刘家豪 = "刘家豪"
-    let あああ = "あああ"
+    let 大家好 = "大家好"
+    let こにちわ = "こにちわ"
     let 🐶    = "🐶🐶🐶🐶🐶"    //表情符号也可以用上
     let 🐮    = "🐮🐮🐮🐮🐮"
     let ？？？ = "？？？"         //中文 ？
     
     print("π的值为\(π)")
-    print("我的名字是：\(刘家豪)")
-    print("这是日语喔：\(あああ)")
+    print("我的名字是：\(大家好)")
+    print("这是日语喔：\(こにちわ)")
     print("一群可爱的小狗：\(🐶)")
     print("一群可爱的小牛：\(🐮)")
     print("这是中文的\(？？？)")
     
     //遍历字符串
-    for character in 刘家豪.characters{
+    for character in 大家好.characters{
         print(character)
     }
     
     //计算字符数量
-    print("刘家豪的长度为：\(刘家豪.characters.count)");
+    print("大家好的长度为：\(大家好.characters.count)");
     
     //连接字符串
     let stringValue1 = "hello"

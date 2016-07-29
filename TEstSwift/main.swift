@@ -81,5 +81,8 @@ import Foundation
 //protocols()
 
 //泛型
-generics()
+//generics()
+
+//访问控制
+accessControl()
 
