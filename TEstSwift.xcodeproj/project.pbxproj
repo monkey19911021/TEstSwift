@@ -33,6 +33,7 @@
 		FBABA7711D13E27200E3CC49 /* Properties.swift in Sources */ = {isa = PBXBuildFile; fileRef = FBABA7701D13E27200E3CC49 /* Properties.swift */; };
 		FBC134941D2F50410007E051 /* Initialization.swift in Sources */ = {isa = PBXBuildFile; fileRef = FBC134931D2F50410007E051 /* Initialization.swift */; };
 		FBD6F5AF1D2DFB4200B605D3 /* Inheritance.swift in Sources */ = {isa = PBXBuildFile; fileRef = FBD6F5AE1D2DFB4200B605D3 /* Inheritance.swift */; };
+		FBF943F01D5AD46B00041367 /* 自定义原型.swift in Sources */ = {isa = PBXBuildFile; fileRef = FBF943EF1D5AD46B00041367 /* 自定义原型.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
@@ -75,6 +76,7 @@
 		FBABA7701D13E27200E3CC49 /* Properties.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Properties.swift; sourceTree = "<group>"; };
 		FBC134931D2F50410007E051 /* Initialization.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Initialization.swift; sourceTree = "<group>"; };
 		FBD6F5AE1D2DFB4200B605D3 /* Inheritance.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Inheritance.swift; sourceTree = "<group>"; };
+		FBF943EF1D5AD46B00041367 /* 自定义原型.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "自定义原型.swift"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -133,6 +135,7 @@
 				FB2515C31D3F047700EE7C7B /* Protocols.swift */,
 				FB4FB6C31D48B48800F17DF7 /* Generics.swift */,
 				FB4FB6C51D49F70600F17DF7 /* AccessControl.swift */,
+				FBF943EF1D5AD46B00041367 /* 自定义原型.swift */,
 			);
 			path = TEstSwift;
 			sourceTree = "<group>";
@@ -213,6 +216,7 @@
 				FB37EE7A1D338B6F00CACC62 /* Deinitialization.swift in Sources */,
 				FB98CD191D0D36BE001A8589 /* ClassAndStructure.swift in Sources */,
 				FB2515C41D3F047700EE7C7B /* Protocols.swift in Sources */,
+				FBF943F01D5AD46B00041367 /* 自定义原型.swift in Sources */,
 				AE387ACA19613EE4000595F6 /* BaseValue.swift in Sources */,
 				6C6FDF161D28BF4E009EB1B5 /* Subscripts.swift in Sources */,
 				AE387AD019613F61000595F6 /* ControlFlow.swift in Sources */,

@@ -84,5 +84,6 @@ import Foundation
 //generics()
 
 //访问控制
-accessControl()
+//accessControl()
 
+自定义原型()
