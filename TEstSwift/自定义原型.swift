@@ -13,13 +13,7 @@ func 自定义原型() {
     let isSuccess: MKBool = true
     
     if isSuccess {
-        print("来访问我的博客：http://mkapple.cn")
-    }
-    
-    let isFalse: MKBool = false
-    
-    if isSuccess == isFalse {
-        print("成功")
+        print("来访问我的博客：http://mkapple.cn ")
     }
 }
 

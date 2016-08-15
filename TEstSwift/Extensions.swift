@@ -60,7 +60,7 @@ extension Person {
     }
 }
 
-// 3. 扩展添加放法
+// 3. 扩展添加方法
 extension Int {
     func repetitions(task: (String) -> Void) {
         //参数类型是一个无参数且无返回值的闭包

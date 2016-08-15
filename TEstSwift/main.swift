@@ -86,4 +86,7 @@ import Foundation
 //访问控制
 //accessControl()
 
-自定义原型()
+//自定义原型()
+
+//单例
+singleInstance()
